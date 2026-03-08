@@ -6,7 +6,7 @@ Build a FastAPI service that aggregates financial market events (earnings, divid
 
 
 ```bash
-docker-compose up -d postgres redis
+docker compose up -d postgres redis
 cp .env.example .env
 poetry install
 poetry run uvicorn app.main:app --reload --port 8000
